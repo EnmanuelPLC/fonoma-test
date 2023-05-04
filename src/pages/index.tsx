@@ -3,7 +3,7 @@ import {Autocomplete, Box, Button, Card, TextField, Typography} from "@mui/mater
 import {styled} from "@mui/system";
 import {useState} from "react";
 import {GetServerSideProps} from "next";
-import {getConversion, getCurrencies} from "@/utils/fetch";
+import {getConversion, getCurrencies} from "../utils/fetch";
 
 const CustomBox = styled(Box)({
 	padding: '15rem 10rem 15rem 10rem',
@@ -72,7 +72,7 @@ export default function Home({ currencies }: IHomeProps) {
 	    <main>
 		    <CustomBox>
 			    <CustomCard>
-				    <Typography sx={{ fontSize: 'xx-large' }}>Currency Conversion Tool</Typography>
+				    <Typography component={'heading'} sx={{fontSize: 'xx-large'}}>Currency Conversion Tool</Typography>
 				    
 				    <FieldGroup>
 					    <Autocomplete

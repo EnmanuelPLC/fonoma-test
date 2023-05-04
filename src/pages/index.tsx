@@ -72,7 +72,7 @@ export default function Home({ currencies }: IHomeProps) {
 	    <main>
 		    <CustomBox>
 			    <CustomCard>
-				    <Typography component={'heading'} sx={{fontSize: 'xx-large'}}>Currency Conversion Tool</Typography>
+				    <Typography sx={{fontSize: 'xx-large'}}>Currency Conversion Tool</Typography>
 				    
 				    <FieldGroup>
 					    <Autocomplete
